@@ -36,7 +36,7 @@ pipeline {
 		 agent { label 'slave-2' }
 	     steps{
 	        sh 'docker rm -f mytomcat'
-	         sh 'docker run -d --name mytomcat -p 7777:8080 urssharath/myrepo:${BUILD_NUMBER}'
+	         sh 'docker run -d --name mytomcat -p 7777:8080 pavithrasbidare/pavithra:${BUILD_NUMBER}'
 	     }
 	 }
 	
