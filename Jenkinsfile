@@ -29,7 +29,7 @@ pipeline {
 		    sh 'ls'
             sh 'docker tag tomcat:${BUILD_NUMBER} pavithrasbidare/pavithra:${BUILD_NUMBER}'
 		    sh 'docker images'
-                sh 'docker push urssharath/myrepo:${BUILD_NUMBER}'
+                sh 'docker push pavithrasbidare/pavithra:${BUILD_NUMBER}'
          }
 	 }
 		 stage('deploy'){
